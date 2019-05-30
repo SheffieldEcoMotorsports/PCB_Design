@@ -1,0 +1,698 @@
+EESchema Schematic File Version 4
+LIBS:Eco-PCB-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Eco-PCB-rescue:Arduino_Nano-arduino_nano Arduino2
+U 1 1 5CA88116
+P 2850 2700
+F 0 "Arduino2" H 2875 4037 60  0000 C CNN
+F 1 "Arduino_Nano" H 2875 3931 60  0000 C CNN
+F 2 "Module:Arduino_Nano" H 2850 2700 60  0001 C CNN
+F 3 "" H 2850 2700 60  0000 C CNN
+	1    2850 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Eco-PCB-rescue:Arduino_Nano-arduino_nano Master1
+U 1 1 5CA897D2
+P 5100 2750
+F 0 "Master1" H 5125 4087 60  0000 C CNN
+F 1 "Arduino_Nano" H 5125 3981 60  0000 C CNN
+F 2 "Module:Arduino_Nano" H 5100 2750 60  0001 C CNN
+F 3 "" H 5100 2750 60  0000 C CNN
+	1    5100 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1750 4250 1750
+Wire Wire Line
+	4250 1750 4250 1300
+Wire Wire Line
+	4250 1300 5950 1300
+Wire Wire Line
+	5950 1300 5950 1800
+Wire Wire Line
+	5950 1800 5800 1800
+Wire Wire Line
+	3550 1650 4150 1650
+Wire Wire Line
+	4150 1650 4150 1200
+Wire Wire Line
+	4150 1200 6050 1200
+Wire Wire Line
+	6050 1200 6050 1700
+Wire Wire Line
+	6050 1700 5800 1700
+Wire Wire Line
+	3900 4400 3900 3650
+Text Label 1650 4400 0    50   ~ 0
+SCLK
+Text Label 1650 4500 0    50   ~ 0
+MISO
+Text Label 1650 4700 0    50   ~ 0
+CS
+Wire Wire Line
+	1600 4500 3950 4500
+Wire Wire Line
+	1600 4400 3900 4400
+$Comp
+L Connector:Conn_01x03_Female A2_2
+U 1 1 5CA8F0C8
+P 1500 5150
+F 0 "A2_2" V 1528 5176 50  0000 R CNN
+F 1 "Current Sensor" H 937 5085 50  0000 R CNN
+F 2 "Eco-PCB-Sensor-Footprints:Current-Sensor" H 1500 5150 50  0001 C CNN
+F 3 "~" H 1500 5150 50  0001 C CNN
+	1    1500 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1700 5150 4050 5150
+Wire Wire Line
+	4050 5150 4050 3150
+Wire Wire Line
+	4050 3150 3550 3150
+Text Label 1800 5150 0    50   ~ 0
+OUT
+Text Label 1800 5250 0    50   ~ 0
+VCC
+Text Label 1800 5050 0    50   ~ 0
+GND
+Wire Wire Line
+	4150 5950 4150 2150
+Wire Wire Line
+	4150 2150 3550 2150
+Wire Wire Line
+	4250 5850 4250 2050
+Wire Wire Line
+	4250 2050 3550 2050
+Text Label 2450 5850 0    50   ~ 0
+TX
+Text Label 2450 5650 0    50   ~ 0
+VCC
+$Comp
+L Connector:Conn_01x06_Female M1
+U 1 1 5CAA2655
+P 4950 5700
+F 0 "M1" H 4842 5175 50  0000 C CNN
+F 1 "SD Card" H 4842 5266 50  0000 C CNN
+F 2 "Eco-PCB-Sensor-Footprints:SD-CARD" H 4950 5700 50  0001 C CNN
+F 3 "~" H 4950 5700 50  0001 C CNN
+	1    4950 5700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5150 5400 6100 5400
+Wire Wire Line
+	5150 5600 6200 5600
+Wire Wire Line
+	6200 5600 6200 2800
+Wire Wire Line
+	6200 2800 5800 2800
+Wire Wire Line
+	5150 5700 6300 5700
+Wire Wire Line
+	6300 5700 6300 2900
+Wire Wire Line
+	6300 2900 5800 2900
+Text Label 2450 5950 0    50   ~ 0
+RX
+Text Label 5500 5400 0    50   ~ 0
+CS_
+Wire Wire Line
+	5150 5500 6000 5500
+Text Label 5500 5500 0    50   ~ 0
+SCK
+Text Label 5500 5600 0    50   ~ 0
+MOSI
+Text Label 5500 5700 0    50   ~ 0
+MISO_
+Text Label 5500 5800 0    50   ~ 0
+VCC
+Text Label 5500 5900 0    50   ~ 0
+GND
+Text Label 2450 5750 0    50   ~ 0
+GND
+Wire Wire Line
+	6150 2100 5800 2100
+Wire Wire Line
+	6200 2200 5800 2200
+Wire Wire Line
+	6250 2300 5800 2300
+Wire Wire Line
+	6300 2400 5800 2400
+Text Notes 6350 950  0    50   ~ 0
+Display pins D4-7 TO 1-4 ON 25DSUB
+Wire Wire Line
+	6700 1350 8700 1350
+Wire Wire Line
+	5800 2000 6700 2000
+Wire Wire Line
+	6700 2000 6700 1350
+$Comp
+L Connector:Conn_01x04_Female A3_1
+U 1 1 5CB6516B
+P 7650 4750
+F 0 "A3_1" H 7678 4726 50  0000 L CNN
+F 1 "GPS" H 7678 4635 50  0000 L CNN
+F 2 "Eco-PCB-Sensor-Footprints:GPS" H 7650 4750 50  0001 C CNN
+F 3 "~" H 7650 4750 50  0001 C CNN
+	1    7650 4750
+	1    0    0    -1  
+$EndComp
+Text Label 7650 4950 0    50   ~ 0
+VCC
+Text Label 7100 4750 0    50   ~ 0
+TX_3
+Text Label 7100 4850 0    50   ~ 0
+RX_3
+Wire Wire Line
+	7450 4850 6700 4850
+Wire Wire Line
+	7450 4750 6750 4750
+Text Label 9050 4150 0    50   ~ 0
+GND
+Text Label 9050 4250 0    50   ~ 0
+SDA
+Text Label 9050 4350 0    50   ~ 0
+SCL
+Text Label 9050 4450 0    50   ~ 0
+INT1
+Text Label 9050 4550 0    50   ~ 0
+INT0
+Wire Wire Line
+	9250 4250 8600 4250
+Wire Wire Line
+	6600 4250 6600 1900
+Wire Wire Line
+	6600 1900 7100 1900
+Wire Wire Line
+	9250 4350 8250 4350
+$Comp
+L Device:R_Small R1
+U 1 1 5CB86E2B
+P 8600 4100
+F 0 "R1" H 8659 4146 50  0000 L CNN
+F 1 "10K Ohms" H 8659 4055 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 8600 4100 50  0001 C CNN
+F 3 "~" H 8600 4100 50  0001 C CNN
+	1    8600 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3800 7100 3800
+Wire Wire Line
+	6450 3700 7100 3700
+Wire Wire Line
+	10700 1750 10700 3400
+Wire Wire Line
+	9250 4150 8950 4150
+Wire Wire Line
+	8950 3400 10700 3400
+Connection ~ 10700 3400
+Wire Wire Line
+	10700 3400 10700 4650
+Wire Wire Line
+	7450 4650 10700 4650
+Connection ~ 10700 4650
+Wire Wire Line
+	10700 4650 10700 5300
+Wire Wire Line
+	5150 5900 10700 5900
+Connection ~ 10700 5900
+Wire Wire Line
+	10700 5900 10700 6100
+Wire Wire Line
+	10500 6450 10500 6100
+Wire Wire Line
+	10500 6100 10700 6100
+Connection ~ 10700 6100
+Wire Wire Line
+	10700 6100 10700 6200
+Wire Wire Line
+	3850 5750 3850 6800
+Wire Wire Line
+	3850 6800 4000 6800
+Wire Wire Line
+	6850 6800 6850 6450
+Wire Wire Line
+	1700 5050 4650 5050
+Wire Wire Line
+	4650 5050 4650 6800
+Connection ~ 4650 6800
+Wire Wire Line
+	4650 6800 6000 6800
+Connection ~ 4000 6800
+Wire Wire Line
+	4000 6800 4650 6800
+Wire Wire Line
+	4450 3750 4450 4050
+Wire Wire Line
+	4450 4900 5750 4900
+Wire Wire Line
+	5750 4900 5750 5300
+Wire Wire Line
+	5750 5300 10700 5300
+Connection ~ 10700 5300
+Wire Wire Line
+	10700 5300 10700 5900
+Wire Wire Line
+	2200 3700 2050 3700
+Wire Wire Line
+	2050 3700 2050 4050
+Wire Wire Line
+	2050 4050 4450 4050
+Connection ~ 4450 4050
+Wire Wire Line
+	4450 4050 4450 4900
+NoConn ~ 9250 4450
+NoConn ~ 9250 4550
+Wire Wire Line
+	8450 3400 8800 3400
+Wire Wire Line
+	8800 3400 8800 2750
+Wire Wire Line
+	8800 2750 10800 2750
+Wire Wire Line
+	10800 4950 10800 4600
+Wire Wire Line
+	7450 4950 10800 4950
+Wire Wire Line
+	5150 5800 10800 5800
+Wire Wire Line
+	10800 5800 10800 5500
+Connection ~ 10800 4950
+Wire Wire Line
+	10450 5500 10800 5500
+Connection ~ 10800 5500
+Wire Wire Line
+	1700 5250 4800 5250
+Wire Wire Line
+	4800 5250 4800 5100
+Wire Wire Line
+	4800 5100 10800 5100
+Connection ~ 10800 5100
+Wire Wire Line
+	10800 5100 10800 4950
+Text Label 1650 4200 0    50   ~ 0
+VCC
+Wire Wire Line
+	1600 4700 3750 4700
+Wire Wire Line
+	6950 4700 6950 4550
+Wire Wire Line
+	8850 4550 8850 4600
+Wire Wire Line
+	6950 4550 8850 4550
+Connection ~ 10800 4600
+Wire Wire Line
+	4450 2100 4350 2100
+Wire Wire Line
+	4350 2100 4350 4700
+Wire Wire Line
+	4350 4700 5150 4700
+Wire Wire Line
+	2200 2050 750  2050
+Wire Wire Line
+	750  2050 750  4800
+Wire Wire Line
+	750  4800 5150 4800
+Wire Wire Line
+	5150 4800 5150 4700
+Connection ~ 5150 4700
+Wire Wire Line
+	5150 4700 6950 4700
+Wire Wire Line
+	8850 4600 10800 4600
+Text Label 9050 4050 0    50   ~ 0
+3.3V
+Wire Wire Line
+	8950 4150 8950 3400
+$Comp
+L Connector:Conn_01x06_Female A3_2
+U 1 1 5CB6E4A8
+P 9450 4250
+F 0 "A3_2" H 9478 4226 50  0000 L CNN
+F 1 "GYRO" H 9478 4135 50  0000 L CNN
+F 2 "Eco-PCB-Sensor-Footprints:Gyro-MPU-6050" H 9450 4250 50  0001 C CNN
+F 3 "~" H 9450 4250 50  0001 C CNN
+	1    9450 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 4050 9000 4050
+Wire Wire Line
+	9000 4050 9000 3900
+Wire Wire Line
+	8600 4250 8600 4200
+Wire Wire Line
+	9400 3650 10800 3650
+Connection ~ 10800 3650
+Wire Wire Line
+	10800 3650 10800 3550
+Text Notes 5900 2500 0    50   ~ 0
+CLK
+Wire Wire Line
+	9000 3900 9400 3900
+Wire Wire Line
+	9400 3900 9400 3650
+Connection ~ 8600 4250
+$Comp
+L Eco-PCB-rescue:Arduino_Nano-arduino_nano Arduino3
+U 1 1 5CA8C623
+P 7800 2750
+F 0 "Arduino3" H 7825 1413 60  0000 C CNN
+F 1 "Arduino_Nano" H 7825 1519 60  0000 C CNN
+F 2 "Module:Arduino_Nano" H 7800 2750 60  0001 C CNN
+F 3 "" H 7800 2750 60  0000 C CNN
+	1    7800 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5CD11EFC
+P 8250 4250
+F 0 "R2" H 8309 4296 50  0000 L CNN
+F 1 "10K Ohms" H 8309 4205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 8250 4250 50  0001 C CNN
+F 3 "~" H 8250 4250 50  0001 C CNN
+	1    8250 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 4250 6600 4250
+Connection ~ 8250 4350
+Wire Wire Line
+	8250 4350 6950 4350
+Wire Wire Line
+	8600 4000 8600 3550
+Wire Wire Line
+	8600 3550 10800 3550
+Connection ~ 10800 3550
+Wire Wire Line
+	10800 3550 10800 3450
+Wire Wire Line
+	8250 4150 8250 4000
+Wire Wire Line
+	8250 4000 8550 4000
+Wire Wire Line
+	8550 4000 8550 3450
+Wire Wire Line
+	8550 3450 10800 3450
+Connection ~ 10800 3450
+Wire Wire Line
+	10800 3450 10800 2750
+Wire Wire Line
+	5800 2500 6900 2500
+Wire Wire Line
+	6900 2500 6900 1400
+Text Notes 7150 750  0    50   ~ 0
+CLK Line D8 to pin 14 on DSUB
+Wire Wire Line
+	6850 6450 10500 6450
+$Comp
+L Connector:Conn_01x05_Female M1_1
+U 1 1 5CD91A4A
+P 4950 6350
+F 0 "M1_1" H 4800 6650 50  0000 L CNN
+F 1 "XSOURCE Wireless" H 4450 6050 50  0000 L CNN
+F 2 "Eco-PCB-Sensor-Footprints:XCSOURCE-Wireless" H 4950 6350 50  0001 C CNN
+F 3 "~" H 4950 6350 50  0001 C CNN
+	1    4950 6350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 5500 10450 6150
+Wire Wire Line
+	10450 6150 5150 6150
+Wire Wire Line
+	6000 6800 6000 6250
+Wire Wire Line
+	6000 6250 5150 6250
+Connection ~ 6000 6800
+Wire Wire Line
+	6000 6800 6850 6800
+$Comp
+L Connector:Conn_01x04_Female A2_3
+U 1 1 5CE68E32
+P 1350 5750
+F 0 "A2_3" H 1242 6035 50  0000 C CNN
+F 1 "BMS Serial Pins" H 1242 5944 50  0000 C CNN
+F 2 "Eco-PCB-Sensor-Footprints:BMS_Serial_Pins" H 1350 5750 50  0001 C CNN
+F 3 "~" H 1350 5750 50  0001 C CNN
+	1    1350 5750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 5850 4250 5850
+Wire Wire Line
+	1550 5950 4150 5950
+Wire Wire Line
+	1550 5750 3850 5750
+Wire Wire Line
+	10800 5150 10800 5100
+Wire Wire Line
+	10800 5500 10800 5150
+Connection ~ 10800 5150
+Wire Wire Line
+	4850 5150 10800 5150
+Wire Wire Line
+	4850 5650 4850 5150
+Wire Wire Line
+	1550 5650 4850 5650
+Text Label 7100 4650 0    50   ~ 0
+GND
+$Comp
+L Connector:Screw_Terminal_01x02 P1
+U 1 1 5CE31B67
+P 10800 6400
+F 0 "P1" V 10672 6480 50  0000 L CNN
+F 1 "Power_Block" V 10763 6480 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10800 6400 50  0001 C CNN
+F 3 "~" H 10800 6400 50  0001 C CNN
+	1    10800 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10800 6200 10800 5900
+Wire Wire Line
+	10800 5900 10900 5900
+Wire Wire Line
+	10900 5900 10900 1200
+Text Label 10700 6200 0    50   ~ 0
+GND
+Text Label 10800 6050 0    50   ~ 0
+VCC_1
+Wire Wire Line
+	7000 1600 7000 2600
+Wire Wire Line
+	7000 2600 7100 2600
+Wire Wire Line
+	7050 1650 7050 2700
+Wire Wire Line
+	7050 2700 7100 2700
+Text Notes 8700 1700 0    50   ~ 0
+DT and SW  for encoder from \nD14 & D15 to DSUB pins 8 & 7 respectively
+Wire Wire Line
+	6250 1150 6250 2300
+Wire Wire Line
+	6200 1050 6200 2200
+Wire Wire Line
+	6150 1000 6150 2100
+Wire Wire Line
+	6300 1250 6300 2400
+Wire Wire Line
+	5800 1900 6550 1900
+Wire Wire Line
+	7100 2800 8750 2800
+Wire Wire Line
+	8750 2800 8750 1950
+Wire Wire Line
+	6150 1000 8400 1000
+Wire Wire Line
+	8400 1000 8400 1100
+Wire Wire Line
+	8400 1100 8900 1100
+Wire Wire Line
+	6550 1900 6550 1300
+Wire Wire Line
+	6900 1400 9700 1400
+Wire Wire Line
+	9700 1400 9700 1000
+Wire Wire Line
+	8800 1650 8800 1000
+Wire Wire Line
+	8800 1650 7050 1650
+Wire Wire Line
+	9000 1000 9000 1600
+Text Notes 8150 1500 0    50   ~ 0
+Buttons D2-3 to 5-6 on 25DSUB\n
+Wire Wire Line
+	7000 1600 9000 1600
+Wire Wire Line
+	8750 1950 8600 1950
+Wire Wire Line
+	8600 1950 8600 1000
+$Comp
+L Connector:Conn_01x06_Female A2_1
+U 1 1 5CAA7969
+P 1400 4500
+F 0 "A2_1" H 1428 4476 50  0000 L CNN
+F 1 "ThermoCouple" H 1428 4385 50  0000 L CNN
+F 2 "Eco-PCB-Sensor-Footprints:PMOD_TC1_Thermocouple" H 1400 4500 50  0001 C CNN
+F 3 "~" H 1400 4500 50  0001 C CNN
+	1    1400 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1600 4300 4000 4300
+Text Label 1650 4300 0    50   ~ 0
+GND
+Wire Wire Line
+	4000 4300 4000 6800
+NoConn ~ 1600 4600
+Wire Wire Line
+	3750 3450 3550 3450
+Wire Wire Line
+	3750 3450 3750 4700
+Wire Wire Line
+	10800 4600 10800 3650
+Wire Wire Line
+	1600 4200 3800 4200
+Text GLabel 3800 4200 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	3900 3650 3550 3650
+Wire Wire Line
+	3550 3550 3950 3550
+Wire Wire Line
+	3950 3550 3950 4500
+Wire Wire Line
+	9500 1250 9500 1000
+Wire Wire Line
+	6550 1300 8500 1300
+Wire Wire Line
+	8500 1000 8500 1300
+Wire Wire Line
+	6300 1250 9500 1250
+Wire Wire Line
+	9300 1000 9300 1150
+$Comp
+L Connector:DB25_Female J1
+U 1 1 5CA9A25D
+P 9700 700
+F 0 "J1" V 10017 700 50  0000 C CNN
+F 1 "DB25_Female" V 9926 700 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-25_Female_Vertical_P2.77x2.84mm_MountingHoles" H 9700 700 50  0001 C CNN
+F 3 " ~" H 9700 700 50  0001 C CNN
+	1    9700 700 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 1150 9300 1150
+Wire Wire Line
+	8700 1000 8700 1350
+Wire Wire Line
+	9100 1050 9100 1000
+Wire Wire Line
+	6200 1050 9100 1050
+Wire Wire Line
+	8900 1000 8900 1100
+Wire Wire Line
+	5800 2700 6000 2700
+Wire Wire Line
+	6000 2700 6000 5500
+Wire Wire Line
+	5800 2600 6100 2600
+Wire Wire Line
+	6100 2600 6100 5400
+Wire Wire Line
+	6950 1800 7100 1800
+Wire Wire Line
+	6950 1800 6950 4350
+Wire Wire Line
+	6700 2050 6850 2050
+Wire Wire Line
+	6850 2050 6850 2000
+Wire Wire Line
+	6850 2000 7100 2000
+Wire Wire Line
+	6700 2050 6700 4850
+Wire Wire Line
+	7100 2100 6750 2100
+Wire Wire Line
+	6750 2100 6750 4750
+Text Label 5250 6150 0    50   ~ 0
+VCC
+Text Label 5250 6250 0    50   ~ 0
+GND
+Text Label 5250 6550 0    50   ~ 0
+SET
+Text Label 5250 6450 0    50   ~ 0
+TX_
+Text Label 5250 6350 0    50   ~ 0
+RX_
+Wire Wire Line
+	5150 6350 5950 6350
+Wire Wire Line
+	5950 6350 5950 3300
+Wire Wire Line
+	5950 3300 5800 3300
+Wire Wire Line
+	5150 6450 5900 6450
+Wire Wire Line
+	5900 6450 5900 3400
+Wire Wire Line
+	5900 3400 5800 3400
+Wire Wire Line
+	5800 3500 5850 3500
+Wire Wire Line
+	5850 3500 5850 6550
+Wire Wire Line
+	5150 6550 5850 6550
+Connection ~ 10800 2750
+Wire Wire Line
+	10800 2750 10800 1100
+Wire Wire Line
+	10800 1100 10900 1100
+Wire Wire Line
+	10900 1100 10900 1000
+Wire Wire Line
+	10400 1200 10400 1000
+Wire Wire Line
+	10400 1200 10900 1200
+Wire Wire Line
+	10800 1000 10750 1000
+Wire Wire Line
+	10750 1000 10750 1750
+Connection ~ 10700 1750
+Wire Wire Line
+	10700 1750 10750 1750
+Wire Wire Line
+	8450 1750 10700 1750
+Wire Wire Line
+	6350 3100 5800 3100
+Wire Wire Line
+	6350 3100 6350 3800
+Wire Wire Line
+	6450 3050 5900 3050
+Wire Wire Line
+	5900 3050 5900 3200
+Wire Wire Line
+	5900 3200 5800 3200
+Wire Wire Line
+	6450 3050 6450 3700
+$EndSCHEMATC
