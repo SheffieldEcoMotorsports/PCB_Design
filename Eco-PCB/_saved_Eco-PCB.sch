@@ -612,14 +612,6 @@ Wire Wire Line
 Wire Wire Line
 	8900 1000 8900 1100
 Wire Wire Line
-	5800 2700 6000 2700
-Wire Wire Line
-	6000 2700 6000 5500
-Wire Wire Line
-	5800 2600 6100 2600
-Wire Wire Line
-	6100 2600 6100 5400
-Wire Wire Line
 	6950 1800 7100 1800
 Wire Wire Line
 	6950 1800 6950 4350
@@ -695,4 +687,12 @@ Wire Wire Line
 	5900 3200 5800 3200
 Wire Wire Line
 	6450 3050 6450 3700
+Wire Wire Line
+	6100 2700 6100 5400
+Wire Wire Line
+	6000 3000 5800 3000
+Wire Wire Line
+	6000 3000 6000 5500
+Wire Wire Line
+	5800 2700 6100 2700
 $EndSCHEMATC

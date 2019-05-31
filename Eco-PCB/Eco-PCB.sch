@@ -57,14 +57,6 @@ Wire Wire Line
 Wire Wire Line
 	6050 1700 5800 1700
 Wire Wire Line
-	6350 3800 6350 3200
-Wire Wire Line
-	6350 3200 5800 3200
-Wire Wire Line
-	6450 3700 6450 3100
-Wire Wire Line
-	6450 3100 5800 3100
-Wire Wire Line
 	3900 4400 3900 3650
 Text Label 1650 4400 0    50   ~ 0
 SCLK
@@ -225,9 +217,6 @@ Wire Wire Line
 Wire Wire Line
 	6450 3700 7100 3700
 Wire Wire Line
-	8450 1750 10700 1750
-Connection ~ 10700 1750
-Wire Wire Line
 	10700 1750 10700 3400
 Wire Wire Line
 	9250 4150 8950 4150
@@ -292,20 +281,15 @@ Wire Wire Line
 NoConn ~ 9250 4450
 NoConn ~ 9250 4550
 Wire Wire Line
-	10700 1000 10700 1750
-Wire Wire Line
 	8450 3400 8800 3400
 Wire Wire Line
 	8800 3400 8800 2750
 Wire Wire Line
 	8800 2750 10800 2750
 Wire Wire Line
-	10800 2750 10800 1000
-Wire Wire Line
 	10800 4950 10800 4600
 Wire Wire Line
 	7450 4950 10800 4950
-Connection ~ 10800 2750
 Wire Wire Line
 	5150 5800 10800 5800
 Wire Wire Line
@@ -507,7 +491,7 @@ Wire Wire Line
 Wire Wire Line
 	10800 5900 10900 5900
 Wire Wire Line
-	10900 5900 10900 1000
+	10900 5900 10900 1200
 Text Label 10700 6200 0    50   ~ 0
 GND
 Text Label 10800 6050 0    50   ~ 0
@@ -679,4 +663,36 @@ Wire Wire Line
 	5850 3500 5850 6550
 Wire Wire Line
 	5150 6550 5850 6550
+Connection ~ 10800 2750
+Wire Wire Line
+	10800 2750 10800 1100
+Wire Wire Line
+	10800 1100 10900 1100
+Wire Wire Line
+	10900 1100 10900 1000
+Wire Wire Line
+	10400 1200 10400 1000
+Wire Wire Line
+	10400 1200 10900 1200
+Wire Wire Line
+	10800 1000 10750 1000
+Wire Wire Line
+	10750 1000 10750 1750
+Connection ~ 10700 1750
+Wire Wire Line
+	10700 1750 10750 1750
+Wire Wire Line
+	8450 1750 10700 1750
+Wire Wire Line
+	6350 3100 5800 3100
+Wire Wire Line
+	6350 3100 6350 3800
+Wire Wire Line
+	6450 3050 5900 3050
+Wire Wire Line
+	5900 3050 5900 3200
+Wire Wire Line
+	5900 3200 5800 3200
+Wire Wire Line
+	6450 3050 6450 3700
 $EndSCHEMATC
