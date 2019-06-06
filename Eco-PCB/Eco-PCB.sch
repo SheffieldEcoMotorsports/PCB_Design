@@ -14,28 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Eco-PCB-rescue:Arduino_Nano-arduino_nano Arduino2
-U 1 1 5CA88116
-P 2850 2700
-F 0 "Arduino2" H 2875 4037 60  0000 C CNN
-F 1 "Arduino_Nano" H 2875 3931 60  0000 C CNN
-F 2 "Module:Arduino_Nano" H 2850 2700 60  0001 C CNN
-F 3 "" H 2850 2700 60  0000 C CNN
-	1    2850 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Eco-PCB-rescue:Arduino_Nano-arduino_nano Master1
-U 1 1 5CA897D2
-P 5100 2750
-F 0 "Master1" H 5125 4087 60  0000 C CNN
-F 1 "Arduino_Nano" H 5125 3981 60  0000 C CNN
-F 2 "Module:Arduino_Nano" H 5100 2750 60  0001 C CNN
-F 3 "" H 5100 2750 60  0000 C CNN
-	1    5100 2750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3550 1750 4250 1750
 Wire Wire Line
@@ -56,8 +34,6 @@ Wire Wire Line
 	6050 1200 6050 1700
 Wire Wire Line
 	6050 1700 5800 1700
-Wire Wire Line
-	3900 4400 3900 3650
 Text Label 1650 4400 0    50   ~ 0
 SCLK
 Text Label 1650 4500 0    50   ~ 0
@@ -281,8 +257,6 @@ Wire Wire Line
 NoConn ~ 9250 4450
 NoConn ~ 9250 4550
 Wire Wire Line
-	8450 3400 8800 3400
-Wire Wire Line
 	8800 3400 8800 2750
 Wire Wire Line
 	8800 2750 10800 2750
@@ -324,8 +298,6 @@ Wire Wire Line
 	4350 2100 4350 4700
 Wire Wire Line
 	4350 4700 5150 4700
-Wire Wire Line
-	2200 2050 750  2050
 Wire Wire Line
 	750  2050 750  4800
 Wire Wire Line
@@ -370,17 +342,6 @@ Wire Wire Line
 Wire Wire Line
 	9400 3900 9400 3650
 Connection ~ 8600 4250
-$Comp
-L Eco-PCB-rescue:Arduino_Nano-arduino_nano Arduino3
-U 1 1 5CA8C623
-P 7800 2750
-F 0 "Arduino3" H 7825 1413 60  0000 C CNN
-F 1 "Arduino_Nano" H 7825 1519 60  0000 C CNN
-F 2 "Module:Arduino_Nano" H 7800 2750 60  0001 C CNN
-F 3 "" H 7800 2750 60  0000 C CNN
-	1    7800 2750
-	-1   0    0    1   
-$EndComp
 $Comp
 L Device:R_Small R2
 U 1 1 5CD11EFC
@@ -496,14 +457,6 @@ Text Label 10700 6200 0    50   ~ 0
 GND
 Text Label 10800 6050 0    50   ~ 0
 VCC_1
-Wire Wire Line
-	7000 1600 7000 2600
-Wire Wire Line
-	7000 2600 7100 2600
-Wire Wire Line
-	7050 1650 7050 2700
-Wire Wire Line
-	7050 2700 7100 2700
 Text Notes 8700 1700 0    50   ~ 0
 DT and SW  for encoder from \nD14 & D15 to DSUB pins 8 & 7 respectively
 Wire Wire Line
@@ -517,10 +470,6 @@ Wire Wire Line
 Wire Wire Line
 	5800 1900 6550 1900
 Wire Wire Line
-	7100 2800 8750 2800
-Wire Wire Line
-	8750 2800 8750 1950
-Wire Wire Line
 	6150 1000 8400 1000
 Wire Wire Line
 	8400 1000 8400 1100
@@ -532,20 +481,8 @@ Wire Wire Line
 	6900 1400 9700 1400
 Wire Wire Line
 	9700 1400 9700 1000
-Wire Wire Line
-	8800 1650 8800 1000
-Wire Wire Line
-	8800 1650 7050 1650
-Wire Wire Line
-	9000 1000 9000 1600
 Text Notes 8150 1500 0    50   ~ 0
 Buttons D2-3 to 5-6 on 25DSUB\n
-Wire Wire Line
-	7000 1600 9000 1600
-Wire Wire Line
-	8750 1950 8600 1950
-Wire Wire Line
-	8600 1950 8600 1000
 $Comp
 L Connector:Conn_01x06_Female A2_1
 U 1 1 5CAA7969
@@ -565,21 +502,11 @@ Wire Wire Line
 	4000 4300 4000 6800
 NoConn ~ 1600 4600
 Wire Wire Line
-	3750 3450 3550 3450
-Wire Wire Line
-	3750 3450 3750 4700
-Wire Wire Line
 	10800 4600 10800 3650
 Wire Wire Line
 	1600 4200 3800 4200
 Text GLabel 3800 4200 0    50   Input ~ 0
 VCC
-Wire Wire Line
-	3900 3650 3550 3650
-Wire Wire Line
-	3550 3550 3950 3550
-Wire Wire Line
-	3950 3550 3950 4500
 Wire Wire Line
 	9500 1250 9500 1000
 Wire Wire Line
@@ -612,19 +539,7 @@ Wire Wire Line
 Wire Wire Line
 	8900 1000 8900 1100
 Wire Wire Line
-	5800 2700 6000 2700
-Wire Wire Line
-	6000 2700 6000 5500
-Wire Wire Line
-	5800 2600 6100 2600
-Wire Wire Line
-	6100 2600 6100 5400
-Wire Wire Line
 	6950 1800 7100 1800
-Wire Wire Line
-	6950 1800 6950 4350
-Wire Wire Line
-	6700 2050 6850 2050
 Wire Wire Line
 	6850 2050 6850 2000
 Wire Wire Line
@@ -695,4 +610,89 @@ Wire Wire Line
 	5900 3200 5800 3200
 Wire Wire Line
 	6450 3050 6450 3700
+Wire Wire Line
+	6100 2700 6100 5400
+Wire Wire Line
+	6000 3000 5800 3000
+Wire Wire Line
+	6000 3000 6000 5500
+Wire Wire Line
+	5800 2700 6100 2700
+Wire Wire Line
+	3750 2650 3550 2650
+Wire Wire Line
+	3750 2650 3750 4700
+Wire Wire Line
+	3950 2850 3550 2850
+Wire Wire Line
+	3950 2850 3950 4500
+Wire Wire Line
+	3900 2950 3550 2950
+Wire Wire Line
+	3900 2950 3900 4400
+Text GLabel 3550 1850 0    50   Input ~ 0
+int
+Wire Wire Line
+	2200 2050 750  2050
+$Comp
+L Eco-PCB-rescue:Arduino_Nano-arduino_nano Arduino2
+U 1 1 5CA88116
+P 2850 2700
+F 0 "Arduino2" H 2875 4037 60  0000 C CNN
+F 1 "Arduino_Nano" H 2875 3931 60  0000 C CNN
+F 2 "Module:Arduino_Nano" H 2850 2700 60  0001 C CNN
+F 3 "" H 2850 2700 60  0000 C CNN
+	1    2850 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 5800 3600 0    50   Input ~ 0
+int
+$Comp
+L Eco-PCB-rescue:Arduino_Nano-arduino_nano Master1
+U 1 1 5CA897D2
+P 5100 2750
+F 0 "Master1" H 5125 4087 60  0000 C CNN
+F 1 "Arduino_Nano" H 5125 3981 60  0000 C CNN
+F 2 "Module:Arduino_Nano" H 5100 2750 60  0001 C CNN
+F 3 "" H 5100 2750 60  0000 C CNN
+	1    5100 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel 7100 3600 0    50   Input ~ 0
+int2
+Text GLabel 5800 3700 0    50   Input ~ 0
+int2
+Text GLabel 7100 2800 0    50   Input ~ 0
+CLK2
+Text GLabel 8800 1000 3    50   Input ~ 0
+CLK2
+Wire Wire Line
+	6950 1800 6950 4350
+Wire Wire Line
+	8450 3400 8800 3400
+Wire Wire Line
+	6700 2050 6850 2050
+$Comp
+L Eco-PCB-rescue:Arduino_Nano-arduino_nano Arduino3
+U 1 1 5CA8C623
+P 7800 2750
+F 0 "Arduino3" H 7825 1413 60  0000 C CNN
+F 1 "Arduino_Nano" H 7825 1519 60  0000 C CNN
+F 2 "Module:Arduino_Nano" H 7800 2750 60  0001 C CNN
+F 3 "" H 7800 2750 60  0000 C CNN
+	1    7800 2750
+	-1   0    0    1   
+$EndComp
+Text GLabel 7100 3500 0    50   Input ~ 0
+SW
+Text GLabel 8600 1000 3    50   Input ~ 0
+SW
+Text GLabel 7100 2700 0    50   Input ~ 0
+DT
+Text GLabel 9000 1000 3    50   Input ~ 0
+DT
+Text GLabel 7100 2600 0    50   Input ~ 0
+D5
+Text GLabel 9200 1000 3    50   Input ~ 0
+D5
 $EndSCHEMATC
