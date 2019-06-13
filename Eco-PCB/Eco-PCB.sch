@@ -695,4 +695,8 @@ Text GLabel 7100 2600 0    50   Input ~ 0
 D5
 Text GLabel 9200 1000 3    50   Input ~ 0
 D5
+Text GLabel 7100 2900 0    50   Input ~ 0
+CLK3
+Text GLabel 9400 1000 3    50   Input ~ 0
+CLK3
 $EndSCHEMATC

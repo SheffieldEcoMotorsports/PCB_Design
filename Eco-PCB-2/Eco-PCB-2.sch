@@ -172,7 +172,7 @@ D5
 Text GLabel 10400 5900 1    50   Input ~ 0
 CLK2
 Text GLabel 5200 2200 2    50   Input ~ 0
-CLK2
+CLK3
 Text GLabel 8800 5900 1    50   Input ~ 0
 VCC
 Text GLabel 6800 5650 0    50   Input ~ 0
@@ -319,4 +319,6 @@ Text GLabel 4450 6850 2    50   Input ~ 0
 GND
 Text GLabel 4450 6250 2    50   Input ~ 0
 GND
+Text GLabel 9800 5900 1    50   Input ~ 0
+CLK3
 $EndSCHEMATC

@@ -662,7 +662,7 @@ Text GLabel 7100 3600 0    50   Input ~ 0
 int2
 Text GLabel 5800 3700 0    50   Input ~ 0
 int2
-Text GLabel 7100 2900 0    50   Input ~ 0
+Text GLabel 7100 2800 0    50   Input ~ 0
 CLK2
 Text GLabel 8800 1000 3    50   Input ~ 0
 CLK2
